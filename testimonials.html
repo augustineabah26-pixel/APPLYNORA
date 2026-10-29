@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#ffffff", "on-surface-variant": "#464555", "on-tertiary": "#ffffff", "primary-container": "#4f46e5", "inverse-on-surface": "#eef0ff", "on-error": "#ffffff", "on-secondary-fixed": "#002113", "primary": "#3525cd", "surface-dim": "#d2d9f4", "inverse-primary": "#c3c0ff", "on-primary-fixed": "#0f0069", "on-error-container": "#93000a", "primary-fixed": "#e2dfff", "surface-variant": "#dae2fd", "surface-tint": "#4d44e3", "inverse-surface": "#283044", "surface-container-highest": "#dae2fd", "error": "#ba1a1a", "error-container": "#ffdad6", "secondary-fixed": "#6ffbbe", "on-tertiary-fixed": "#07006c", "on-primary-fixed-variant": "#3323cc", "outline": "#777587", "tertiary-container": "#4b4dd8", "surface-container-low": "#f2f3ff", "on-secondary": "#ffffff", "outline-variant": "#c7c4d8", "background": "#faf8ff", "on-tertiary-fixed-variant": "#2f2ebe", "on-primary-container": "#dad7ff", "on-tertiary-container": "#d9d8ff", "surface-container": "#eaedff", "tertiary-fixed-dim": "#c0c1ff", "on-primary": "#ffffff", "secondary-container": "#6cf8bb", "primary-fixed-dim": "#c3c0ff", "secondary-fixed-dim": "#4edea3", "secondary": "#006c49", "on-surface": "#131b2e", "surface-bright": "#faf8ff", "on-secondary-container": "#00714d", "surface": "#faf8ff", "tertiary-fixed": "#e1e0ff", "surface-container-high": "#e2e7ff", "on-background": "#131b2e", "on-secondary-fixed-variant": "#005236", "tertiary": "#3130c0" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-lg": "2rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "gutter-sm": "1rem", "margin-lg": "3rem", "space-md": "1rem", "margin-sm": "1rem", "space-xl": "2.5rem", "margin": "1.5rem", "gutter": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "title-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "title-sm": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="ApplyNora Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGaAc3_dikiMItHBCEbZPPllKr91SZGfJfadHU74uGp74RR9kCsb7LLyI7XsQ7HNmM5FfeefW2Uii_o9I7KlgomjnuU8GEIBvLURmpuJ8DzXL39XeaGsLaNtBWTqjqP6POsNmv9zGK5ROtBKBFNsBYH4TJlUW2tZ0oXyezJFq10H8pqtJvpFeoDiqqo4sEik7dZhi-TVr6sWiscrSthfJdFllflIG8n-145WG6y8"/><a class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface tracking-tight" data-path="home" href="#"><span class="text-primary">Apply</span>Nora</a></div><nav class="hidden lg:flex items-center gap-gutter" data-active-classes="text-primary font-semibold"><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="home" href="#">Home</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="features" href="#">Features</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="cv-rebranding" href="#">CV Rebranding</a><a class="text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors" data-path="pricing" href="#">Pricing</a><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="testimonials" href="#">Testimonials</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors px-space-sm py-space-xs" data-path="home" href="#">Sign In</a><a class="inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_0_16px_rgba(99,102,241,0.3)] hover:opacity-95 active:scale-[0.985] transition-all" data-path="cv-rebranding" href="#"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>Upload CV / Get Started</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Atmospheric Gradient & Eyebrow Zone -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface via-surface-container-low to-surface py-space-xl">
+<!-- Ambient Background Blooms (Strictly Contained) -->
+<div class="absolute -top-24 -left-20 w-96 h-96 rounded-full bg-primary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-80 h-80 rounded-full bg-secondary-fixed/50 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin relative z-10 flex flex-col items-center text-center">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-lowest shadow-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">REAL CAREER BREAKTHROUGHS</span>
+<span class="text-outline-variant">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2,840+ Verified Offers</span>
+</div>
+<!-- Main Headline with scale and contrast -->
+<h1 class="font-headline-xl text-headline-xl text-on-surface max-w-4xl tracking-tight leading-tight mb-space-md">
+        From Exhausting Job Hunts to <span class="bg-gradient-to-r from-primary via-primary-container to-tertiary-container bg-clip-text text-transparent">Multiple Competing Offers</span>
+</h1>
+<!-- Subtitle -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl">
+        See how software engineers, product leaders, designers, and executives used ApplyNora's autonomous agent pipeline and CV rebranding to secure tier-1 positions worldwide.
+      </p>
+<!-- High-Impact Telemetry Metric Banner -->
+<div class="w-full max-w-5xl bg-surface-container-lowest rounded-xl shadow-xl p-space-lg">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter divide-y-0 text-left">
+<!-- Metric 1 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">4.9<span class="text-outline font-normal text-title-md">/5</span></span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Overall Candidate Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Verified across 2,800+ candidate exits</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">14 Days</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Avg. to 1st Interview</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Down from industry 58-day baseline</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs text-primary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">+42%</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Average Compensation Lift</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Benchmarked against pre-Nora base</span>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-low/60 hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">89%</span>
+</div>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Offer Landed ≤ 30 Days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Autonomous submission pass-rate</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Story Filter Navigation Bar -->
+<section class="w-full bg-surface-container-lowest sticky top-20 z-30 shadow-sm">
+<div class="max-w-7xl mx-auto px-margin py-space-sm flex items-center justify-between overflow-x-auto gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-max" id="storyFilters">
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-sm">
+          All Stories (48)
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+          Software Engineering
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+          Product Management
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+          Design & UX
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+          Remote Global Roles
+        </button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md transition-colors">
+          African Tech Leaders
+        </button>
+</div>
+<div class="hidden lg:flex items-center gap-space-xs pl-space-md">
+<span class="material-symbols-outlined text-outline text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">All Offers Verified via HR Portal Docs</span>
+</div>
+</div>
+</section>
+<!-- Section 3: Featured Executive In-Depth Spotlight Case Studies -->
+<section class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">DEEP-DIVE PROFILES</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Featured Executive Breakthroughs</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        High-density audit reports detailing before-and-after conversion rates, CV reconfiguration changes, and final package valuations.
+      </p>
+</div>
+<!-- Spotlight Grid (4 High Density Asymmetric Cards) -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter-lg">
+<!-- Case Study 1: Tunde Adebayo -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<!-- Header Row -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Portrait photo of Tunde Adebayo, an experienced African tech executive and cloud architect in clean navy tailored clothing, well lit with modern architectural background, looking confident." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD0SlTDxXtDzZA6RyCR1rycV2rTL_nYX6-Bbr8-8HRGY23GyiMkTcM7KWrTJu0OVTpH5aYWTjXFCGbyvj4BYl9MGI6TuAX9w-vm3-vExLWI_c1mB3B_Ik2DDJ3L1K2L1Vmo14MvcxSJnnldyBBMWWKvYGfZa5aUIWKmXR5c0Otqb13f3pOh49bfNh25ga1sGNws8ix1f2DuPRQ-ry-2rYdWQWWu6mQTHVB2wd4J3A"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Tunde Adebayo</h3>
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Senior Fullstack & Cloud Architect</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Lagos → US Remote</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary font-medium">Fintech ($145k Base)</span>
+</div>
+</div>
+</div>
+<!-- Company / ATS Badge -->
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Greenhouse Pass
+            </span>
+</div>
+<!-- Quote Box -->
+<blockquote class="bg-surface-container-low p-space-md rounded-lg font-body-md text-body-md text-on-surface italic mb-space-md relative">
+<span class="material-symbols-outlined text-primary-fixed-dim absolute -top-2 left-2 text-[24px]">format_quote</span>
+            “I spent 4 months manually copying and pasting my CV into Workday and Greenhouse portals with zero callbacks. Nora rebranded my bullets with verifiable distributed systems telemetry. Within 12 days, I had 5 interview invites.”
+          </blockquote>
+<!-- Before vs After Telemetry Matrix -->
+<div class="bg-surface-container-highest/40 rounded-lg p-space-md mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-sm font-semibold flex items-center justify-between">
+<span>Telemetry Delta Breakdown</span>
+<span class="text-secondary font-bold">Verified Success</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Callback Rate</span>
+<span class="font-title-sm text-title-sm text-error line-through">3%</span>
+<span class="font-title-md text-title-md font-bold text-secondary ml-1">41%</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-error line-through">4+ Mos</span>
+<span class="font-title-md text-title-md font-bold text-primary ml-1">12 Days</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Comp Jump</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">+65%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Target Platform: Greenhouse ATS (100% Passed)</span>
+<span class="text-primary font-semibold hover:underline cursor-pointer flex items-center gap-0.5">Read Dossier <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Case Study 2: Elena Lin -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<!-- Header Row -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Professional studio headshot of Elena Lin, a Staff Frontend Engineer with sleek dark hair in a bright Scandinavian studio environment, warm approachable smile and modern tech glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQXOp4MlaZNlD6YgwyTFtaHUp05D_DkiVCrXQUTiZroV4RnpvsEayEKm7hx_szBWJ9b2xA7yQ539QSJ8LnD_TqSwWVtY2Ur2mKWcK-pTy77PQc_QNsMvhovCASLXH_npDyinJxmLTYcg2APtkHFOuO3wOOop3fBU6wTakzCOERUUJ9_vCGAip3ufRGlSI4a3RgjgpQ6NfZDfpAK3X1jdePYdQFOzEy5U-6feKYsyg"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Elena Lin</h3>
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Staff Frontend Engineer</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Toronto → SF Remote</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary font-medium">Series B Scaleup ($190k)</span>
+</div>
+</div>
+</div>
+<!-- Company / ATS Badge -->
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Lever Fast-Track
+            </span>
+</div>
+<!-- Quote Box -->
+<blockquote class="bg-surface-container-low p-space-md rounded-lg font-body-md text-body-md text-on-surface italic mb-space-md relative">
+<span class="material-symbols-outlined text-primary-fixed-dim absolute -top-2 left-2 text-[24px]">format_quote</span>
+            “The CV rebranding engine is magic. It reformatted my generic bullet points into punchy, data-backed metrics that cleared Greenhouse and Lever filters every single time.”
+          </blockquote>
+<!-- Before vs After Telemetry Matrix -->
+<div class="bg-surface-container-highest/40 rounded-lg p-space-md mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-sm font-semibold flex items-center justify-between">
+<span>Telemetry Delta Breakdown</span>
+<span class="text-secondary font-bold">Verified Success</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Manual Form Fills</span>
+<span class="font-title-sm text-title-sm text-error line-through">120+</span>
+<span class="font-title-md text-title-md font-bold text-secondary ml-1">0</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">First Interview</span>
+<span class="font-title-sm text-title-sm text-error line-through">35 Days</span>
+<span class="font-title-md text-title-md font-bold text-primary ml-1">5 Days</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Offer Speed</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">16 Days</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Automation Mode: Nora Autonomous Co-Pilot</span>
+<span class="text-primary font-semibold hover:underline cursor-pointer flex items-center gap-0.5">Read Dossier <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Case Study 3: Chidinma Okonkwo -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<!-- Header Row -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Portrait photo of Chidinma Okonkwo, dynamic female Nigerian product executive with stylish blazer against clean architectural glass background, warm natural lighting, confident leadership posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7q8qjJ_v00sx1TuSz-ajUAU4ZWYUVfOP2NkHK6FYsUZIL_tjitY0PhAbaNusq4DZDKzoxC95jbGN5TZwaBii6BOxdT83qrcM4J5IXW4iVrcQX_KBQfK2N9w3DIOI5-f7HxI7b-UHl7td0b6-eHxTqZO5BHhfKdN6jOedFCEX8cdh0aC3C_nuAlRePTasx71H9TQeN3f_g5ieqn_95_1FLE2lKsDwkCI78Htz4PDE"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Chidinma Okonkwo</h3>
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lead Product Manager</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Nairobi → UK Remote</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary font-medium">HealthTech (£92k + Equity)</span>
+</div>
+</div>
+</div>
+<!-- Company / ATS Badge -->
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Workday Bypass
+            </span>
+</div>
+<!-- Quote Box -->
+<blockquote class="bg-surface-container-low p-space-md rounded-lg font-body-md text-body-md text-on-surface italic mb-space-md relative">
+<span class="material-symbols-outlined text-primary-fixed-dim absolute -top-2 left-2 text-[24px]">format_quote</span>
+            “Nora's screening memory answered 40-question questionnaires flawlessly. The instant WhatsApp notifications let me book calendar interview slots within seconds of recruiter outreach.”
+          </blockquote>
+<!-- Before vs After Telemetry Matrix -->
+<div class="bg-surface-container-highest/40 rounded-lg p-space-md mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-sm font-semibold flex items-center justify-between">
+<span>Telemetry Delta Breakdown</span>
+<span class="text-secondary font-bold">Verified Success</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Week 1 Requests</span>
+<span class="font-title-sm text-title-sm text-error line-through">0</span>
+<span class="font-title-md text-title-md font-bold text-secondary ml-1">7 Calls</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Response Time</span>
+<span class="font-title-sm text-title-sm text-error line-through">2.4 Days</span>
+<span class="font-title-md text-title-md font-bold text-primary ml-1">3 Min</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Total Offers</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">3 Final</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>AI Profile: Product Strategy & GTM Matrix</span>
+<span class="text-primary font-semibold hover:underline cursor-pointer flex items-center gap-0.5">Read Dossier <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+<!-- Case Study 4: Marcus Ramirez -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<!-- Header Row -->
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-full object-cover shadow-sm" data-alt="Portrait photo of Marcus Ramirez, creative design director with subtle beard, stylish minimalist apparel in a warm sunlit creative agency studio with wood and plants, thoughtful confident expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCApnOfqsozf483Ce17l58XG3MD3YvLwVkmDHx1m_rI_Heoni5LtRvnwJ4ZVY75RKIkTethxdRiMOQtKmZdLdxK-I45iNnA_bmwruP75aa7ZDPbAVaUYXsDuYK-rTjvW2ziF27RLUSF0AiMINfoqDoYzg8sbGvRv42ftIcVh1vD6YYxlBJQlX-8SGtt0H6A1dgxQS3VwdtnF1MsxBCB2tHR35g7Wv0gkv6uNRfyf3Q"/>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Marcus Ramirez</h3>
+<span class="material-symbols-outlined text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Head of Design</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Austin → NYC Hybrid</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-primary font-medium">Fintech Scale ($185k + Equity)</span>
+</div>
+</div>
+</div>
+<!-- Company / ATS Badge -->
+<span class="px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span> Executive Match
+            </span>
+</div>
+<!-- Quote Box -->
+<blockquote class="bg-surface-container-low p-space-md rounded-lg font-body-md text-body-md text-on-surface italic mb-space-md relative">
+<span class="material-symbols-outlined text-primary-fixed-dim absolute -top-2 left-2 text-[24px]">format_quote</span>
+            “As a design leader, your portfolio and impact metrics need to shine immediately. Nora highlighted my multi-brand design system scaling, cutting through the ATS noise completely.”
+          </blockquote>
+<!-- Before vs After Telemetry Matrix -->
+<div class="bg-surface-container-highest/40 rounded-lg p-space-md mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant mb-space-sm font-semibold flex items-center justify-between">
+<span>Telemetry Delta Breakdown</span>
+<span class="text-secondary font-bold">Verified Success</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">ATS Match Score</span>
+<span class="font-title-sm text-title-sm text-error line-through">52%</span>
+<span class="font-title-md text-title-md font-bold text-secondary ml-1">96%</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Exec Interviews</span>
+<span class="font-title-sm text-title-sm text-error line-through">1 in 60d</span>
+<span class="font-title-md text-title-md font-bold text-primary ml-1">4 in 14d</span>
+</div>
+<div class="bg-surface-container-lowest p-space-xs rounded">
+<span class="font-label-sm text-label-sm text-outline block">Package Value</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">$220k Total</span>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Format: Design Systems Leadership Resume v3</span>
+<span class="text-primary font-semibold hover:underline cursor-pointer flex items-center gap-0.5">Read Dossier <span class="material-symbols-outlined text-[14px]">arrow_forward</span></span>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 4: Verified Masonry Testimonials -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">VERIFIED HIRES STREAM</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Real Stories Across Every Engineering & Product Domain</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Every testimonial below has undergone cryptographic offer validation via signed offer letters or recruiter email threads.
+        </p>
+</div>
+<!-- Testimonial Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “I literally went to sleep after loading my career history. Nora submitted 62 applications overnight tailored to each posting. By Friday, I had 4 screening calls on my calendar.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                SA
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Siddharth Anand</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DevOps / SRE Specialist</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">11 Days</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “The CV Rebranding is what distinguishes ApplyNora. My bullets went from passive descriptions to concrete numbers. Recruiters actually quoted my resume back to me in interviews.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                AO
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Amina Osei</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Data Engineering Lead</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">19 Days</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “As someone transitioning from traditional finance to crypto engineering, the ATS was my biggest blocker. Nora bridged the jargon gaps perfectly while keeping all facts 100% accurate.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                LK
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Lucas Kowalski</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Solidity / Backend Dev</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">14 Days</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “Filling out Greenhouse diversity forms and salary expectations for the 100th time was breaking my spirit. Nora handled all questionnaires without halluncination. Best $49 I've ever spent.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                JM
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Jessica Morales</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Product Operations Director</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">22 Days</span>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “The WhatsApp alert when a hiring manager booked a round was game-changing. I prepped while Nora organized my technical portfolio links. Multiple offers within 3 weeks.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                FT
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Farooq Tariq</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">iOS / Mobile Architect</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">9 Days</span>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex text-amber-500">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-emerald-50 text-secondary font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Hire
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-space-md">
+              “I was skeptical of AI job search tools because of hallucinated skills. ApplyNora never invented anything; it just phrased my actual 8-year legacy impact like a FAANG senior would.”
+            </p>
+</div>
+<div class="pt-space-md border-t-0 flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center font-title-sm text-primary font-bold">
+                NZ
+              </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold block">Nandi Zulu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Principal QA Automation</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Time to Offer</span>
+<span class="font-title-sm text-title-sm text-secondary font-bold">17 Days</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Indicator Strip -->
+<div class="mt-space-lg flex flex-wrap items-center justify-center gap-gutter text-center text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">format_image_left</span>
+<span class="font-body-sm text-body-sm">Zero Hallucination Guarantee</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">lock_reset</span>
+<span class="font-body-sm text-body-sm">Data Encrypted with Enterprise AES-256</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">fact_check</span>
+<span class="font-body-sm text-body-sm">Real Salary Statements on File</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Audio & Video Soundbite Highlights -->
+<section class="w-full max-w-7xl mx-auto px-margin py-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">CANDIDATE DISPATCHES</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">Hear Their Breakthroughs in Their Own Words</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Listen to audio debriefs and watch interview post-mortems straight from candidates after their offer signoffs.
+      </p>
+</div>
+<!-- Audio / Snippet Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Media Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col justify-between group">
+<div>
+<!-- Visual Media Header with Waveform Simulation -->
+<div class="relative w-full h-40 bg-surface-container rounded-lg overflow-hidden flex flex-col justify-end p-space-sm mb-space-sm">
+<!-- Simulated Waveform SVG -->
+<svg class="w-full h-12 text-primary opacity-80" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0,20 Q10,5 20,20 T40,20 T60,5 T80,35 T100,10 T120,30 T140,15 T160,25 T180,8 T200,20" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0,20 Q10,12 20,20 T40,20 T60,14 T80,26 T100,15 T120,25 T140,18 T160,22 T180,14 T200,20" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"></path>
+</svg>
+<!-- Play Button Overlay -->
+<button aria-label="Play audio interview" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm z-10">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest font-medium">Audio Dispatch #41</span>
+<span class="font-mono">03:42</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1">
+            “How I handled 4 offers in 72 hours without burning out”
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Kwame Mensah • Senior Distributed Systems Engineer • Ex-Fintech
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">headphones</span> 1,420 listens</span>
+<span class="text-primary font-medium hover:underline cursor-pointer">Listen full episode</span>
+</div>
+</div>
+<!-- Media Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col justify-between group">
+<div>
+<!-- Visual Media Header -->
+<div class="relative w-full h-40 bg-surface-container rounded-lg overflow-hidden flex flex-col justify-end p-space-sm mb-space-sm">
+<svg class="w-full h-12 text-secondary opacity-80" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0,20 Q15,2 30,20 T60,20 T90,2 T120,38 T150,12 T180,28 T200,20" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0,20 Q15,10 30,20 T60,20 T90,10 T120,30 T150,15 T180,25 T200,20" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"></path>
+</svg>
+<button aria-label="Play audio interview" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm z-10">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest font-medium">Video Debrief</span>
+<span class="font-mono">05:14</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1">
+            “Cracking the US Remote ATS Firewall from East Africa”
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Faith Wambui • VP of Product • Multi-Cloud Health SaaS
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">videocam</span> 2,890 views</span>
+<span class="text-primary font-medium hover:underline cursor-pointer">Watch interview</span>
+</div>
+</div>
+<!-- Media Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col justify-between group">
+<div>
+<!-- Visual Media Header -->
+<div class="relative w-full h-40 bg-surface-container rounded-lg overflow-hidden flex flex-col justify-end p-space-sm mb-space-sm">
+<svg class="w-full h-12 text-tertiary opacity-80" fill="none" preserveaspectratio="none" viewbox="0 0 200 40">
+<path d="M0,20 Q8,35 16,20 T32,5 T48,35 T64,15 T80,25 T96,5 T112,30 T128,10 T144,25 T160,15 T176,35 T200,20" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0,20 Q8,28 16,20 T32,12 T48,28 T64,18 T80,22 T96,12 T112,25 T128,15 T144,22 T160,18 T176,28 T200,20" stroke="currentColor" stroke-opacity="0.5" stroke-width="1.5"></path>
+</svg>
+<button aria-label="Play audio interview" class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm z-10">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest font-medium">Debrief Podcast</span>
+<span class="font-mono">04:02</span>
+</div>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold mb-1">
+            “Salary Negotiation With Leverage: Walking in with 3 Offers”
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Mateo Rossi • Senior Machine Learning Engineer • AI Labs
+          </p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">headphones</span> 980 listens</span>
+<span class="text-primary font-medium hover:underline cursor-pointer">Listen full episode</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: High-Contrast Bottom Conversion CTA -->
+<section class="w-full bg-gradient-to-br from-primary via-primary-container to-tertiary py-space-xl text-on-primary relative overflow-hidden">
+<!-- Subtle Background Accents -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-surface-tint/20 blur-2xl pointer-events-none"></div>
+<div class="absolute left-1/4 -top-20 w-64 h-64 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto px-margin text-center relative z-10 flex flex-col items-center">
+<!-- Tag -->
+<span class="px-space-md py-space-xs rounded-full bg-white/10 backdrop-blur-md font-label-sm text-label-sm font-semibold tracking-wider uppercase mb-space-md">
+        YOUR TURN TO ACCELERATE
+      </span>
+<h2 class="font-headline-xl text-headline-xl font-bold tracking-tight text-on-primary max-w-3xl mb-space-sm">
+        Write Your Own Success Story With Nora
+      </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl mb-space-xl">
+        Join over 2,800 tech specialists who replaced endless application paperwork with autonomous pipelines and verifiable interview growth.
+      </p>
+<!-- Primary Action Row -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full justify-center">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-xl py-space-md rounded-lg bg-surface-container-lowest text-primary font-label-lg text-label-lg font-bold shadow-xl hover:bg-surface-container-low active:scale-95 transition-all" data-path="cv-rebranding" href="#">
+<span class="material-symbols-outlined text-[20px]">upload_file</span>
+<span>Upload CV for Instant ATS Audit</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md rounded-lg bg-white/10 hover:bg-white/20 text-on-primary font-label-lg text-label-lg font-semibold backdrop-blur-sm transition-all" data-path="pricing" href="#">
+<span>Explore Automation Plans</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Trust Elements Under CTA -->
+<div class="mt-space-lg flex flex-wrap items-center justify-center gap-space-lg text-on-primary-container font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Free ATS Scorecard
+        </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> No Credit Card Required
+        </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check</span> Results in < 90 Seconds
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive Client Filter Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterButtons = document.querySelectorAll('#storyFilters button');
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+            b.classList.add('bg-surface-container-low', 'text-on-surface');
+          });
+          btn.classList.add('bg-primary', 'text-on-primary', 'font-semibold', 'shadow-sm');
+          btn.classList.remove('bg-surface-container-low', 'text-on-surface');
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-margin-lg"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface tracking-tight"><img alt="ApplyNora Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGaAc3_dikiMItHBCEbZPPllKr91SZGfJfadHU74uGp74RR9kCsb7LLyI7XsQ7HNmM5FfeefW2Uii_o9I7KlgomjnuU8GEIBvLURmpuJ8DzXL39XeaGsLaNtBWTqjqP6POsNmv9zGK5ROtBKBFNsBYH4TJlUW2tZ0oXyezJFq10H8pqtJvpFeoDiqqo4sEik7dZhi-TVr6sWiscrSthfJdFllflIG8n-145WG6y8"/><span class="text-primary">Apply</span>Nora</div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Automate your high-stakes job search with proactive AI agent pipelines, tailored resume synthesis, and instant auto-submissions.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span>SOC2 Type II Ready</span><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">lock</span>256-Bit SSL</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Platform</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="#">Features</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cv-rebranding" href="#">CV Rebranding</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Auto Application</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="#">ATS Diagnostics</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Resources</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="#">Pricing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="testimonials" href="#">Testimonials</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">API & Docs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Career Insights</a></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Stay Ahead of the Market</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive weekly curated AI job market intelligence, salary benchmarks, and platform feature drops.</p><div class="flex items-center gap-space-xs"><div class="relative flex-1"><input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]" placeholder="Enter your work email" type="email"/></div><button class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors">Subscribe</button></div><div class="flex items-center gap-space-md text-on-surface-variant pt-space-xs"><a aria-label="Community Network" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">hub</span></a><a aria-label="Global Updates" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="Direct Inquiries" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg"><div class="font-body-sm text-body-sm text-outline">© 2025 ApplyNora Inc. All rights reserved. Precision Career Automation.</div><div class="flex items-center gap-space-md font-body-sm text-body-sm text-outline"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Security Overview</a></div></div></div></footer></body></html>
