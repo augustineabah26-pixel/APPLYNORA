@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#faf8ff", "tertiary": "#3130c0", "surface-variant": "#dae2fd", "secondary-container": "#6cf8bb", "tertiary-fixed": "#e1e0ff", "on-error-container": "#93000a", "primary": "#3525cd", "on-primary-fixed": "#0f0069", "secondary": "#006c49", "on-primary-fixed-variant": "#3323cc", "on-surface-variant": "#464555", "outline": "#777587", "on-secondary-container": "#00714d", "on-secondary-fixed-variant": "#005236", "surface-container-low": "#f2f3ff", "on-secondary-fixed": "#002113", "inverse-primary": "#c3c0ff", "primary-container": "#4f46e5", "error": "#ba1a1a", "tertiary-container": "#4b4dd8", "inverse-on-surface": "#eef0ff", "surface-container": "#eaedff", "background": "#faf8ff", "surface-dim": "#d2d9f4", "primary-fixed-dim": "#c3c0ff", "on-tertiary-fixed": "#07006c", "secondary-fixed-dim": "#4edea3", "inverse-surface": "#283044", "primary-fixed": "#e2dfff", "surface-container-lowest": "#ffffff", "surface-container-high": "#e2e7ff", "error-container": "#ffdad6", "surface-container-highest": "#dae2fd", "on-tertiary-container": "#d9d8ff", "surface-tint": "#4d44e3", "on-background": "#131b2e", "outline-variant": "#c7c4d8", "on-tertiary-fixed-variant": "#2f2ebe", "on-surface": "#131b2e", "on-primary-container": "#dad7ff", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface": "#faf8ff", "tertiary-fixed-dim": "#c0c1ff", "on-error": "#ffffff", "secondary-fixed": "#6ffbbe" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin-lg": "3rem", "gutter": "1.5rem", "space-xs": "0.25rem", "margin-sm": "1rem", "gutter-lg": "2rem", "space-md": "1rem", "gutter-sm": "1rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xl": "2.5rem" }, "fontFamily": { "title-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Plus Jakarta Sans" ], "label-lg": [ "Inter" ], "body-lg": [ "Inter" ], "label-md": [ "Inter" ], "title-md": [ "Inter" ], "body-md": [ "Inter" ], "headline-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Plus Jakarta Sans" ], "title-sm": [ "Inter" ], "headline-md": [ "Plus Jakarta Sans" ], "label-sm": [ "Inter" ], "body-sm": [ "Inter" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Plus Jakarta Sans" ] }, "fontSize": { "title-lg": [ "18px", { "lineHeight": "24px", "fontWeight": "600" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" } ], "title-md": [ "16px", { "lineHeight": "24px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "title-sm": [ "14px", { "lineHeight": "20px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" } ], "headline-lg-mobile": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><main class="w-full min-h-screen bg-surface flex flex-col justify-center"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+<!-- Top System Header & Stepper Badge -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider mb-3">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Autonomous Career Intelligence
+        </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Initiate Nora Autopilot
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+          Calibrate your algorithmic career agent, ingest credentials, and define discrete dispatch guardrails.
+        </p>
+</div>
+<!-- Pipeline Progress Card -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm min-w-[280px]">
+<div class="flex items-center justify-between font-label-md text-label-md mb-2">
+<span class="text-on-surface font-title-sm text-title-sm">Step 1 of 3</span>
+<span class="text-primary font-title-sm text-title-sm">33% Completed</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 33%"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span>
+          Baseline Calibration &amp; Ingestion
+        </p>
+</div>
+</div>
+<!-- Main Grid Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left/Main Column: Multi-stage Form Workspace (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<!-- Section 1: Rapid Authentication & Credential Anchor -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-5">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Stage 01</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Identity &amp; Terminal Access</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              256-Bit TLS
+            </span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5">
+<button class="flex items-center justify-center gap-3 py-3 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition text-on-surface font-title-sm text-title-sm" type="button">
+<svg class="w-5 h-5" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"></path>
+</svg>
+<span>Continue with Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 py-3 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container transition text-on-surface font-title-sm text-title-sm" type="button">
+<svg class="w-5 h-5 fill-[#0A66C2]" viewbox="0 0 24 24">
+<path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"></path>
+</svg>
+<span>LinkedIn 1-Click Sync</span>
+</button>
+</div>
+<div class="relative flex items-center justify-center my-4">
+<div class="w-full h-px bg-surface-container-high"></div>
+<span class="absolute px-3 bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">or direct email access</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="work-email">Primary Career Email</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none focus:bg-surface-container-lowest focus:shadow-md transition" id="work-email" placeholder="alex.taylor@domain.com" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5" for="master-pass">Secure Access Key</label>
+<input class="w-full px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm outline-none focus:bg-surface-container-lowest focus:shadow-md transition" id="master-pass" placeholder="••••••••••••" type="password"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Master CV / Taxonomy Ingestion Dropzone -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Stage 02</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Career Artifact &amp; Vector Taxonomy</h2>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+              32-Point Parser Live
+            </div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+            Nora extracts skills, systemic impacts, quantitative achievements, and constructs an embedding matrix against live Greenhouse, Lever, and Workday postings.
+          </p>
+<!-- Interactive Upload Dropzone -->
+<div class="cursor-pointer group relative rounded-xl bg-surface-container-low/60 hover:bg-surface-container-high/50 transition-all p-8 flex flex-col items-center justify-center text-center" id="dropzone">
+<input accept=".pdf,.docx" class="hidden" id="fileInput" type="file"/>
+<div class="w-14 h-14 rounded-2xl bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm mb-3 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">upload_file</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mb-1">
+              Drag &amp; drop Master Resume (PDF, DOCX)
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+              Direct vector ingestion up to 25MB • Formatting intact for high-scoring ATS outputs
+            </p>
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-primary font-title-sm text-title-sm shadow-sm group-hover:bg-primary group-hover:text-on-primary transition">
+<span class="material-symbols-outlined text-lg">add_circle</span>
+              Browse Local Document
+            </div>
+<!-- Upload Status Overlay / Micro State -->
+<div class="hidden w-full mt-4 p-3 rounded-lg bg-secondary-container/40 text-on-secondary-container font-label-md text-label-md flex items-center justify-between" id="uploadFeedback">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-base">task_alt</span>
+<span id="fileName">Alexander_Taylor_Staff_Architect_2025.pdf</span>
+</span>
+<span class="font-semibold">Analyzed: 94/100 Baseline</span>
+</div>
+</div>
+<div class="mt-4 pt-4 flex flex-col sm:flex-row items-center gap-3">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">link</span>
+<input class="w-full pl-9 pr-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:bg-surface-container transition" placeholder="Or paste public LinkedIn profile URL..." type="url"/>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container font-title-sm text-title-sm whitespace-nowrap transition" type="button">
+              Extract via URL
+            </button>
+</div>
+</section>
+<!-- Section 3: Career Velocity & Role Targets -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Stage 03</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Target Trajectory &amp; Compensation Floor</h2>
+</div>
+<span class="material-symbols-outlined text-primary">target</span>
+</div>
+<!-- Target Job Titles -->
+<div class="mb-5">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Priority Target Titles (Autonomous Matching Spectrum)</label>
+<div class="flex flex-wrap gap-2 mb-2" id="titleTags">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+                Staff Software Engineer
+                <button class="hover:opacity-75" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+                Lead Solutions Architect
+                <button class="hover:opacity-75" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm">
+                Head of Infrastructure
+                <button class="hover:opacity-75" onclick="this.parentElement.remove()" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+</div>
+<div class="flex gap-2">
+<input class="flex-1 px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:bg-surface-container transition" id="tagInput" placeholder="Add custom role, e.g. VP of Product..." type="text"/>
+<button class="px-4 py-2 bg-surface-container-high hover:bg-surface-container text-on-surface font-title-sm text-title-sm rounded-lg transition" id="addTagBtn" type="button">Add</button>
+</div>
+</div>
+<!-- Work Modality Pills -->
+<div class="mb-5">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Permitted Work Modalities</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface">Global Remote (USD/GBP)</span>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
+<input checked="" class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface">Pan-African Remote</span>
+</label>
+<label class="flex items-center gap-2.5 p-3 rounded-xl bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
+<input class="w-4 h-4 rounded text-primary accent-primary" type="checkbox"/>
+<span class="font-title-sm text-title-sm text-on-surface">Hybrid / High Hub</span>
+</label>
+</div>
+</div>
+<!-- Base Compensation Floor -->
+<div>
+<div class="flex items-center justify-between mb-2">
+<label class="font-label-md text-label-md text-on-surface-variant">Non-Negotiable Base Compensation Floor</label>
+<span class="font-title-lg text-title-lg text-primary font-bold" id="sliderValue">$145,000 / year</span>
+</div>
+<input class="w-full accent-primary bg-surface-container h-2 rounded-lg cursor-pointer" id="compSlider" max="350000" min="80000" step="5000" type="range" value="145000"/>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant mt-2">
+<span>$80,000</span>
+<span>$200,000</span>
+<span>$350,000+ (Executive/Staff)</span>
+</div>
+</div>
+</section>
+<!-- Section 4: Autopilot Guardrail Settings -->
+<section class="bg-surface-container-lowest p-6 sm:p-8 rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Stage 04</span>
+<h2 class="font-title-lg text-title-lg text-on-surface">Discrete Dispatch Guardrails</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Privacy Shield</span>
+</div>
+<!-- Current Employer Exclusion / Blacklist -->
+<div class="mb-5">
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1.5">Strict Domain Blacklist (Current Employer &amp; Affiliates)</label>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-error self-center text-[20px]">block</span>
+<input class="flex-1 px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm outline-none focus:bg-surface-container transition" placeholder="e.g. CurrentTech Corp, stealth affiliate entities..." type="text"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 ml-7">
+              Nora checks domain trees and ultimate parent holding companies to prevent exposure.
+            </p>
+</div>
+<!-- Autopilot Mode Toggle -->
+<div class="mb-5 p-4 rounded-xl bg-surface-container-low/70">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-title-md text-title-md text-on-surface block">Dispatch Automation Level</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Control autonomous application dispatching.</span>
+</div>
+<div class="inline-flex p-1 bg-surface-container rounded-lg">
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md transition text-on-surface-variant" id="queueBtn" type="button">1-Click Queue</button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition" id="autoBtn" type="button">Full Autonomous</button>
+</div>
+</div>
+</div>
+<!-- Realtime Alert Channels -->
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-2">Realtime Dispatch &amp; Recruiter Ping Channel</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
+<input checked="" class="text-primary accent-primary" name="channel" type="radio"/>
+<span class="material-symbols-outlined text-secondary">chat</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">WhatsApp Concierge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct instant dispatch notifications</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition">
+<input class="text-primary accent-primary" name="channel" type="radio"/>
+<span class="material-symbols-outlined text-primary">send</span>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Telegram Bot Hook</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Encrypted prompt &amp; approval sync</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+<!-- Primary Launch Action Box -->
+<div class="p-6 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center text-center">
+<button class="w-full py-4 px-8 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-headline-sm text-headline-sm transition transform active:scale-[0.99] shadow-md flex items-center justify-center gap-3" type="button">
+<span>Activate Nora Autopilot &amp; Review Matches</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="flex flex-wrap items-center justify-center gap-4 mt-3 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+              No credit card required for initial ATS audit
+            </span>
+<span>•</span>
+<span>100% Confidential</span>
+<span>•</span>
+<span>SOC-2 Certified Pipeline</span>
+</div>
+</div>
+</div>
+<!-- Right/Side Column: Telemetry, Proof & System Transparency (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Live Telemetry Card: Next 5 Minutes -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-4">
+<h3 class="font-title-lg text-title-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+              Next 5 Minutes Telemetry
+            </h3>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">
+            The moment you hit activate, Nora executes three concurrent vector pipelines across top career APIs:
+          </p>
+<!-- Interactive Stepper -->
+<div class="relative pl-6 space-y-6 before:content-[''] before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-high">
+<div class="relative">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold">1</div>
+<div class="bg-surface-container-low p-3.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">T + 00:00 - Rebranding &amp; Vectorization</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Immediate</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  CV parsed into 32 dynamic competencies. Quantitative metrics highlighted for ATS parsing models.
+                </p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold">2</div>
+<div class="bg-surface-container-low p-3.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">T + 02:00 - 50+ ATS Portals Queried</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Automated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  High-yield queries across Greenhouse, Lever, and Workday match roles filtering out sub-standard comp offers.
+                </p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -left-6 top-1 w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold">3</div>
+<div class="bg-surface-container-low p-3.5 rounded-lg">
+<div class="flex justify-between items-center mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">T + 04:30 - Tailored Application Staged</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Cover letter synthesised, contextual resume tailored, and staged for dispatch dispatching.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Verified Placement Proof Snippet -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex items-center gap-3 mb-4">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Portrait of an African tech professional in his early thirties wearing sharp navy blue tailoring against an architectural glass background, warm studio lighting with high clarity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_anglowjANYeWpkxvhZVVopgWQYwqXxaiZplAD7KeaLSWtdFovA14uHb7mZiLZhQu4E4cr5m2M7bcdZaH9L4EjeDa53JlDjVAVvJvXZeiXOzWGXWVZffg-ZE-HQSagJ3005xOL6IqTIWw98VZE0lRUr6i1-KLtFvRqJ3jslkdisLa0X4QMpDJn7o8APhIB6tr4lcaBAIecX3ZgEsSwELykluoppWUMnp6WpyqrWQ"/>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface">Tunde Adebayo</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Staff Platform Engineer • Lagos to London (Remote)</p>
+</div>
+</div>
+<div class="p-3.5 rounded-lg bg-surface-container-low mb-3">
+<p class="font-body-sm text-body-sm text-on-surface italic">
+              "Nora dispatched 34 customized packets while I was running sprint retros. Landed two Tier-1 interviews within 72 hours, resulting in a +65% compensation bump."
+            </p>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 font-semibold text-secondary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+              +$54,000 USD Annual Delta
+            </span>
+<span>Placed via Greenhouse</span>
+</div>
+</div>
+<!-- Security & Guarantee Framework -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<h4 class="font-title-md text-title-md text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">security</span>
+            Enterprise Grade Security Baseline
+          </h4>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span><strong>Zero Data Resale:</strong> Your CV artifacts are never utilized to train public foundation models.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span><strong>Total Discretion:</strong> Strict domain masking ensures your current employer never sees active market presence.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">check</span>
+<span><strong>SOC-2 Type II Compliant:</strong> Hardware-encrypted token vaults guard and shred ingested profiles upon request.</span>
+</div>
+</div>
+</div>
+<!-- Support / Career Concierge Direct Access -->
+<div class="bg-surface-container p-5 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">support_agent</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface">Career Concierge on Standby</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Assistance with custom CV parsing</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm shadow-sm transition" type="button">
+            Chat
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions for interactive sliders & upload simulated behavior
+  const compSlider = document.getElementById('compSlider');
+  const sliderValue = document.getElementById('sliderValue');
+
+  if (compSlider && sliderValue) {
+    compSlider.addEventListener('input', (e) => {
+      const val = Number(e.target.value).toLocaleString();
+      sliderValue.textContent = `$${val} / year`;
+    });
+  }
+
+  // Tag creation micro-interaction
+  const tagInput = document.getElementById('tagInput');
+  const addTagBtn = document.getElementById('addTagBtn');
+  const titleTags = document.getElementById('titleTags');
+
+  function addTag() {
+    if (!tagInput || !tagInput.value.trim() || !titleTags) return;
+    const tag = document.createElement('span');
+    tag.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-sm text-label-sm';
+    tag.innerHTML = `${tagInput.value.trim()} <button type="button" class="hover:opacity-75" onclick="this.parentElement.remove()"><span class="material-symbols-outlined text-[14px]">close</span></button>`;
+    titleTags.appendChild(tag);
+    tagInput.value = '';
+  }
+
+  if (addTagBtn) {
+    addTagBtn.addEventListener('click', addTag);
+  }
+  if (tagInput) {
+    tagInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        addTag();
+      }
+    });
+  }
+
+  // File dropzone trigger
+  const dropzone = document.getElementById('dropzone');
+  const fileInput = document.getElementById('fileInput');
+  const uploadFeedback = document.getElementById('uploadFeedback');
+  const fileName = document.getElementById('fileName');
+
+  if (dropzone && fileInput) {
+    dropzone.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) {
+        if (fileName) fileName.textContent = e.target.files[0].name;
+        if (uploadFeedback) uploadFeedback.classList.remove('hidden');
+      }
+    });
+  }
+
+  // Toggle dispatch state visually
+  const queueBtn = document.getElementById('queueBtn');
+  const autoBtn = document.getElementById('autoBtn');
+
+  if (queueBtn && autoBtn) {
+    queueBtn.addEventListener('click', () => {
+      queueBtn.className = 'px-3 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition';
+      autoBtn.className = 'px-3 py-1.5 rounded-md font-label-md text-label-md transition text-on-surface-variant';
+    });
+    autoBtn.addEventListener('click', () => {
+      autoBtn.className = 'px-3 py-1.5 rounded-md font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm font-semibold transition';
+      queueBtn.className = 'px-3 py-1.5 rounded-md font-label-md text-label-md transition text-on-surface-variant';
+    });
+  }
+</script></main></body></html>
