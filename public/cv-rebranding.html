@@ -700,15 +700,34 @@
 
   // Micro-interaction on Demo Trigger Button
   const demoBtn = document.getElementById('demo-trigger-btn');
-  demoBtn.addEventListener('click', () => {
+  demoBtn.addEventListener('click', async () => {
     demoBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span> Re-synthesizing CV...';
-    setTimeout(() => {
-      demoBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">check</span> Rebrand Complete (98% Match)';
+    demoBtn.disabled = true;
+
+    try {
+      const response = await fetch('/api/cv/rebrand', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      const data = await response.json();
+
+      demoBtn.innerHTML = `<span class="material-symbols-outlined text-[18px] text-secondary">check</span> ${data.message || 'Rebrand Complete (98% Match)'}`;
       demoBtn.classList.replace('bg-primary', 'bg-secondary');
+
+      if (data.model) {
+        console.log(`Rebrand powered by NVIDIA model: ${data.model}`);
+      }
+    } catch (error) {
+      console.error('Error during rebrand simulation:', error);
+      demoBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-error">error</span> Rebrand Failed';
+      demoBtn.classList.replace('bg-primary', 'bg-surface-container-high');
+    } finally {
       setTimeout(() => {
         demoBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">bolt</span> Run Live Rebrand Simulation';
         demoBtn.classList.replace('bg-secondary', 'bg-primary');
-      }, 2500);
-    }, 900);
+        demoBtn.classList.replace('bg-surface-container-high', 'bg-primary');
+        demoBtn.disabled = false;
+      }, 3500);
+    }
   });
 </script></main><footer class="w-full bg-surface-container-low text-on-surface-variant pt-space-xl pb-margin-lg"><div class="max-w-7xl mx-auto px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-on-surface tracking-tight"><img alt="ApplyNora Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACGaAc3_dikiMItHBCEbZPPllKr91SZGfJfadHU74uGp74RR9kCsb7LLyI7XsQ7HNmM5FfeefW2Uii_o9I7KlgomjnuU8GEIBvLURmpuJ8DzXL39XeaGsLaNtBWTqjqP6POsNmv9zGK5ROtBKBFNsBYH4TJlUW2tZ0oXyezJFq10H8pqtJvpFeoDiqqo4sEik7dZhi-TVr6sWiscrSthfJdFllflIG8n-145WG6y8"/><span class="text-primary">Apply</span>Nora</div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Automate your high-stakes job search with proactive AI agent pipelines, tailored resume synthesis, and instant auto-submissions.</p><div class="flex items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span>SOC2 Type II Ready</span><span class="inline-flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant"><span class="material-symbols-outlined text-[14px]">lock</span>256-Bit SSL</span></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Platform</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="features.html">Features</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="cv-rebranding" href="cv-rebranding.html">CV Rebranding</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Auto Application</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="features" href="features.html">ATS Diagnostics</a></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Resources</span><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="pricing" href="pricing.html">Pricing</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="testimonials" href="testimonials.html">Testimonials</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">API & Docs</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="index.html">Career Insights</a></div><div class="lg:col-span-4 flex flex-col gap-space-md"><span class="font-title-sm text-title-sm text-on-surface uppercase tracking-wider">Stay Ahead of the Market</span><p class="font-body-sm text-body-sm text-on-surface-variant">Receive weekly curated AI job market intelligence, salary benchmarks, and platform feature drops.</p><div class="flex items-center gap-space-xs"><div class="relative flex-1"><input class="w-full px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary-container shadow-[0_1px_3px_0_rgba(15,23,42,0.04)]" placeholder="Enter your work email" type="email"/></div><button class="px-space-md py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors">Subscribe</button></div><div class="flex items-center gap-space-md text-on-surface-variant pt-space-xs"><a aria-label="Community Network" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">hub</span></a><a aria-label="Global Updates" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a aria-label="Direct Inquiries" class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg"><div class="font-body-sm text-body-sm text-outline">© 2025 ApplyNora Inc. All rights reserved. Precision Career Automation.</div><div class="flex items-center gap-space-md font-body-sm text-body-sm text-outline"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="hover:text-on-surface transition-colors" href="#">Security Overview</a></div></div></div></footer></body></html>
