@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./public/css/output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustineabah26-pixel/APPLYNORA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/augustineabah26-pixel/APPLYNORA/issues"
+  },
+  "homepage": "https://github.com/augustineabah26-pixel/APPLYNORA#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
+}
